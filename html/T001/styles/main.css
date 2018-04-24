@@ -1,21 +1,19 @@
-.container {
-  max-width: 960px;
-}
+
 
 /*
  * Custom translucent site header
  */
 
-.site-header {
+.navbar {
   background-color: rgba(0, 0, 0, .85);
   -webkit-backdrop-filter: saturate(180%) blur(20px);
   backdrop-filter: saturate(180%) blur(20px);
 }
-.site-header a {
+.navbar a {
   color: #999;
   transition: ease-in-out color .15s;
 }
-.site-header a:hover {
+.navbar a:hover {
   color: #fff;
   text-decoration: none;
 }
@@ -79,3 +77,26 @@
 }
 
 .overflow-hidden { overflow: hidden; }
+
+/* Carousel base class */
+.carousel {
+  margin-bottom: 4rem;
+}
+/* Since positioning the image, we need to help out the caption */
+.carousel-caption {
+  bottom: 3rem;
+  z-index: 10;
+}
+
+/* Declare heights because of positioning of img element */
+.carousel-item {
+  height: 32rem;
+  background-color: #777;
+}
+.carousel-item > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  height: 32rem;
+}
