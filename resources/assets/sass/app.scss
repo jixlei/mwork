@@ -8,7 +8,38 @@
 // Bootstrap
 @import '~bootstrap/scss/bootstrap';
 
-.navbar-laravel {
-  background-color: #fff;
+#lunbotu{
+  padding: 20px 0;
+}
+.navbar-nav > li{
+  padding: 0 15px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
+}
+.navbar-brand > img{
+  width: 120px;
+  height: 32px;
+}
+.tabs{
+  height: 44px;
+  margin: 20px 0 20px;
+  line-height: 44px;
+  border-bottom: 2px solid #21B384;
+  background: #E8E8E8;
+  // overflow: hidden;
+}
+.tabs h2{
+  float: left;
+  padding: 0 25px;
+  font: 18px/44px "Microsoft Yahei";
+  color: #fff;
+  background-color: #21B384;
+}
+.tabs span{
+  float: left;
+  font-size: 0;
+}
+.tabs span a{
+  margin-left: 20px;
+  font-size: 12px;
+  color: #999;
 }

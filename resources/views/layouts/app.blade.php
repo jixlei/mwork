@@ -16,8 +16,9 @@
         @show
     </head>
     <body>
-      @section('page')
-      @show
-      <script src="{{ mix('/js/app.js') }}" ></script>
+        @include('shared.nav')
+        @yield('page')
+        <script src="{{ mix('/js/app.js') }}" ></script>
+        @stack('scripts')
     </body>
 </html>
